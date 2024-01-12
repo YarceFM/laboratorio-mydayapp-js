@@ -166,6 +166,7 @@ nodes.clearCompletedBtn.addEventListener("click", () => {
 
   if (liList[0] == undefined) {
     localStorage.removeItem("mydayapp-js");
+    displayTasks();
   } else {
     for (let element of liList) {
       const elementString = element.outerHTML;
